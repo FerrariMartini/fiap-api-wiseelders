@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "84bf3ba1-4726-46af-8913-6513df78fdce",
+		"name": "WiseElders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get activity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/activities/5f8d8d3aea00d30c9ca530bc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"activities",
+						"5f8d8d3aea00d30c9ca530bc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete activity",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/activities/5f8d8dc1806d132dfcd020a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"activities",
+						"5f8d8dc1806d132dfcd020a3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get activities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/activities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create activity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Lorem ipsum\",\r\n    \"enrollQuantity\": 120,\r\n    \"kalacheCapital\": \"Financeiro\",\r\n    \"lifeAspect\": \"Financeiro\",\r\n    \"totalInvest\": 5128.56,\r\n    \"cycle\": {\r\n        \"start\": \"2020-01-01T09:00:00-03:00\",\r\n        \"end\": \"2020-01-01T09:00:00-03:00\",\r\n        \"quantity\": 58\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/activities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update activity",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Lorem ipsum sit dolor\",\r\n    \"enrollQuantity\": 252,\r\n    \"kalacheCapital\": \"Financeiro\",\r\n    \"lifeAspect\": \"Financeiro\",\r\n    \"totalInvest\": 7458.26,\r\n    \"cycle\": {\r\n        \"start\": \"2020-01-01T09:00:00-03:00\",\r\n        \"end\": \"2020-01-01T09:00:00-03:00\",\r\n        \"quantity\": 58\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/activities/5f8d8d3aea00d30c9ca530bc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"activities",
+						"5f8d8d3aea00d30c9ca530bc"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
